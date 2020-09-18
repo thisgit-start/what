@@ -37,7 +37,7 @@ def write_excel():
     # 写第一行
     # for i in range(0, len(row0)):
     #     sheet1.write(0, i, row0[i], set_style('Times New Roman', 220, True))
-    for x in range(1, 9):
+    for x in range(1, 2):
         # random_name.random_name()-随机姓名
         # random_phone.create_phone()-随机电话号
         # random_email.RandomEmail()-随机邮箱
@@ -45,8 +45,8 @@ def write_excel():
         # random_username.get_userNameAndPassword()-随机账号、密码
         row1 = [random_name.random_name(), "", random_phone.create_phone(), random_email.RandomEmail(),
                 random_id.IDcard(),
-                random_username.get_userNameAndPassword(), '11', 'R01Z063',
-                'P0139', '11100']
+                random_username.get_userNameAndPassword(), '11', 'R01Z066',
+                'P0112', '00001']
         for i in range(0, len(row0)):
             # '''第一行'''
             sheet1.write(0, i, row0[i])
