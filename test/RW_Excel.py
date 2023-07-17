@@ -29,7 +29,7 @@ def set_style(name, height, bold=False):
 def write_excel():
     f = xlwt.Workbook()
 
-    sheet1 = f.add_sheet('学生', cell_overwrite_ok=True)
+    sheet1 = f.add_sheet('导入', cell_overwrite_ok=True)
 
     row0 = ["员工姓名", "员工工号", "手机号", "邮箱", '身份证号', '登录账号', '登录密码', '组织编号', '岗位编号', '上级工号']
 
@@ -37,7 +37,7 @@ def write_excel():
     # 写第一行
     # for i in range(0, len(row0)):
     #     sheet1.write(0, i, row0[i], set_style('Times New Roman', 220, True))
-    for x in range(1, 2):
+    for x in range(1, 3):
         # random_name.random_name()-随机姓名
         # random_phone.create_phone()-随机电话号
         # random_email.RandomEmail()-随机邮箱
